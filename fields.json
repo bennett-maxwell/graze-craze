@@ -139,7 +139,12 @@
       "item": "FDD"
     },
     "fee_veteran": {
-      "value": "$39,500 for qualifying veterans (FDD Item 5, p.18)",
+      "value": "$39,600 for eligible veterans (20% off the $49,500 initial franchise fee, first franchise location; FDD Item 5, p.9)",
+      "type": "absolute",
+      "item": "FDD"
+    },
+    "fee_affiliate_brand_owner": {
+      "value": "$39,500 reduced franchise fee for owners in good standing of affiliated brands (Signarama, Fully Promoted, TBA, VTX, TGG, OE, EXF, IO, IA, BOT; FDD Item 5, p.9)",
       "type": "absolute",
       "item": "FDD"
     },
@@ -150,7 +155,7 @@
     }
   },
   "risk": {
-    "arithmetic": "20 (base) + 10 (35-year term commitment, longest in lane) + 6 (capital intensity, ceiling $325,608) + 4 (protected store territory but delivery areas may overlap/change; no exclusivity) + 4 (no Item 19 financial performance representation) + 2 (4 disclosed UFG-affiliate litigation matters) - 4 (low 6% royalty) - 2 ($10,000 veteran fee incentive) - 2 (UFG family support infrastructure) = 38",
+    "arithmetic": "20 (base) + 10 (35-year term commitment, longest in lane) + 6 (capital intensity, ceiling $325,608) + 4 (protected store territory but delivery areas may overlap/change; no exclusivity) + 4 (no Item 19 financial performance representation) + 2 (4 disclosed UFG-affiliate litigation matters) - 4 (low 6% royalty) - 2 ($10,000 affiliated-brand-owner fee incentive) - 2 (UFG family support infrastructure) = 38",
     "bands": {
       "0-24": "Low",
       "25-49": "Moderate",
@@ -189,9 +194,9 @@
         "weight": "low_royalty"
       },
       {
-        "basis": "$10,000 veteran fee reduction (FDD Item 5, p.18)",
+        "basis": "$10,000 affiliated-brand-owner fee reduction (FDD Item 5, p.9)",
         "points": -2,
-        "weight": "veteran_incentive"
+        "weight": "affiliate_incentive"
       },
       {
         "basis": "UFG multi-brand support infrastructure (FDD Item 1)",
